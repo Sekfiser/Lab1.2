@@ -25,7 +25,7 @@ namespace Lab1._2
                 foreach (string element in Args)
                 {
                     if (int.TryParse(element, out Digits[i]))
-                        i++;
+                    { i++; }
                 }
             }
         }
@@ -36,6 +36,13 @@ namespace Lab1._2
 
         public int Multi()
         {
+            for (int i = 0; i < Digits.Length; i++)
+            {
+                if (Digits[i] == 0)
+                {
+                    Digits[i] = 1;
+                }
+            }
             return Digits.Aggregate((x, y) => x * y);
         }
     }

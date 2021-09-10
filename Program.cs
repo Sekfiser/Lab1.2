@@ -14,7 +14,7 @@ namespace Lab1._2
             }
             else 
             {
-                Console.WriteLine("There are no command line arguments!");
+                Console.WriteLine("There is no command line arguments!");
             }
             Console.ReadKey();
         }
